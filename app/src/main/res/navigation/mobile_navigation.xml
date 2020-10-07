@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.fourcpplus.survey.ui.services.HomeFragment"
+        android:label="@string/services"
+        tools:layout="@layout/fragment_home"
+        >
+
+        <action
+            android:id="@+id/action_nav_services_to_dataDownLoadFrag"
+            app:destination="@id/dataDownLoadFrag" />
+
+        <action
+            android:id="@+id/action_nav_services_to_uploadpending"
+            app:destination="@id/nav_uploadSurvey" />
+
+        <action
+            android:id="@+id/action_nav_services_to_plotRecheck"
+            app:destination="@id/nav_recheck" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.fourcpplus.survey.ui.gpssurvey.SurveyFragment"
+        android:label="@string/gpssrvy"
+        tools:layout="@layout/fragment_survey" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.fourcpplus.survey.ui.summary.SummaryFragment"
+        android:label="@string/plotsmry"
+        tools:layout="@layout/fragment_summary" />
+
+    <fragment
+        android:id="@+id/nav_tools"
+        android:name="com.fourcpplus.survey.ui.tools.ReprintFragment"
+        android:label="@string/plotrprnt"
+        tools:layout="@layout/fragment_reprint" />
+
+    <fragment
+        android:id="@+id/nav_recheck"
+        android:name="com.fourcpplus.survey.ui.recheckPlot.PlotRecheckFragment"
+        android:label="@string/plot_recheck"
+        tools:layout="@layout/fragment_plotrecheck" />
+
+    <fragment
+        android:id="@+id/nav_uploadSurvey"
+        android:name="com.fourcpplus.survey.ui.uploadSurvey.SurveyUploadFragment"
+        android:label="@string/upload_survey"
+        tools:layout="@layout/fragment_upload_survey" />
+
+    <fragment
+        android:id="@+id/nav_villclosing"
+        android:name="com.fourcpplus.survey.ui.villageclosing.VillageClosing"
+        android:label="@string/village_closing"
+        tools:layout="@layout/fragment_village_closing" />
+
+    <fragment
+        android:id="@+id/nav_share"
+        android:name="com.fourcpplus.survey.ui.logout.LogOutFragment"
+        android:label="@string/signout"
+        tools:layout="@layout/fragment_logout" />
+
+    <fragment
+        android:id="@+id/dataDownLoadFrag"
+        android:name="com.fourcpplus.survey.ui.DataDownLoadFrag"
+        android:label="Download"
+        tools:layout="@layout/fragment_data_down_load" >
+
+    </fragment>
+</navigation>

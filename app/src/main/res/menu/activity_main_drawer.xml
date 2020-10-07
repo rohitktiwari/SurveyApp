@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/services" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/gpssrvy" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/plotsmry" />
+        <item
+            android:id="@+id/nav_tools"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/plotrprnt" />
+
+        <!--<item
+            android:id="@+id/nav_recheck"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/plot_recheck" />
+
+        <item
+            android:id="@+id/nav_uploadSurvey"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/upload_survey" />-->
+
+        <item
+            android:id="@+id/nav_villclosing"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/village_closing" />
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/signout" />
+    </group>
+
+
+</menu>

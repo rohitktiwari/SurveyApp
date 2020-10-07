@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/plot_recheck"
+        android:orderInCategory="100"
+        android:title="@string/plot_recheck"
+        android:visible="true"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/last_year_plot"
+        android:orderInCategory="100"
+        android:title="@string/last_year_plot"
+        android:visible="true"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+</menu>

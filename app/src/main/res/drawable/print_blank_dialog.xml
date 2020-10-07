@@ -1,0 +1,13 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_focused="true" android:state_pressed="false" android:drawable="@color/colorPrimary" />
+    <item android:state_focused="true" android:state_pressed="true" android:drawable="@drawable/print_with_blank" />
+    <item android:state_focused="false" android:state_pressed="true" android:drawable="@drawable/print_with_blank" />
+
+    <item>
+        <shape xmlns:android="http://schemas.android.com/apk/res/android">
+            <solid android:color="#EC9939"/>
+            <corners android:radius="5dp" />
+            <size android:height="40dp" android:width="150dp"/>
+        </shape>
+    </item>
+</selector>

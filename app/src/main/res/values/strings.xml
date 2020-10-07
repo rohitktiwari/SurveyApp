@@ -1,0 +1,93 @@
+<resources>
+    <string name="app_name">Survey App</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Print Blank</string>
+    <string name="plot_recheck">Plot Recheck</string>
+    <string name="upload_survey">Upload Survey</string>
+    <string name="last_year_plot">Last Year Plot</string>
+
+    <string name="services">Services</string>
+    <string name="gpssrvy">GPS Survey</string>
+    <string name="plotsmry">Plot Summary</string>
+    <string name="plotrprnt">Plot Reprint</string>
+    <string name="signout">Logout</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="division">Division:</string>
+    <string name="user_id">User ID:</string>
+    <string name="set_user_details">Set User Details.</string>
+    <string name="centre">Centre:</string>
+
+    <!--Fragments side menu name -->
+    <string name="tare_process">Tare Process</string>
+    <string name="challan_summary">Challan Summary</string>
+    <string name="purchase_summary">Purchase Summary</string>
+    <string name="rate_summary">Rate Summary</string>
+
+    <string name="gross_process">Gross Process</string>
+    <string name="challan_process">Challan Process</string>
+    <string name="download">Download</string>
+
+    <string-array name="plant_type">
+        <item>Plant Method</item>
+        <item>Disease</item>
+        <item>Insect</item>
+        <item>Inter Cropping</item>
+        <item>Land Tyoe</item>
+        <item>Crop Cycle</item>
+        <item>Crop Condition</item>
+        <item>Mix Crop</item>
+        <item>Irrigation</item>
+        <item>Broder Crop</item>
+        <item>Demo Plot</item>
+        <item>Soil Type</item>
+        <item>Seed Source</item>
+        <item>Crop Type</item>
+        <item>Others</item>
+    </string-array>
+
+    <string name="error_configuration">Please configure your serial port first.</string>
+    <string name="error_security">You do not have read/write permission to the serial
+		port.</string>
+    <string name="error_unknown">The serial port can not be opened for an unknown
+		reason.</string>
+
+    <string name="entervillname">Plot Village</string>
+
+    <string name="entervillAdd">Plot Address</string>
+    <string name="entervillSerial">Serail No</string>
+    <string name="direction">Direction(Lat Long for all direction)</string>
+    <string name="cordinate">Get Coordinate</string>
+    <string name="lat">Lat.</string>
+    <string name="longitude">Long.</string>
+    <string name="east">East</string>
+    <string name="west">West</string>
+    <string name="north">North</string>
+    <string name="south">South</string>
+    <string name="percentage">Percentage</string>
+    <string name="shareArea">Share Area</string>
+    <string name="plotarea">Plot Area</string>
+    <string name="dimentsion">Dimension(Meter)</string>
+    <string name="vill">Village</string>
+    <string name="villAddress">Village Address</string>
+    <string name="cultivatedArea">CultiVated Area</string>
+    <string name="grower">Grower</string>
+    <string name="grower_name">Grower Name</string>
+    <string name="accountVariety">Account Variety</string>
+    <string name="showingDate">Showing Date</string>
+    <string name="plantTypeCode">Plant Type Code</string>
+    <string name="plantType">PlantType</string>
+    <string name="submit">Submit</string>
+    <string name="print">Print</string>
+    <string name="accountVarietyName">Variety Name</string>
+    <string name="village_closing">Village Closing Form</string>
+    <string name="msg_token_fmt" translatable="false">InstanceID Token: %s</string>
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+
+
+</resources>

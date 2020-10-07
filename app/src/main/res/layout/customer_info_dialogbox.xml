@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@color/steel_blue"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <TextView
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:gravity="center"
+            android:text="Set User Details." />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:gravity="center"
+                android:text="Centre:" />
+
+            <EditText
+                android:id="@+id/centre_edt_id"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.7"
+                android:inputType="textCapCharacters"
+
+                android:background="@android:drawable/editbox_background_normal"
+                android:hint="centre"
+                android:padding="10dp"
+                android:layout_marginEnd="10dp"
+                android:textColorHint="@color/light_grey"
+                android:layout_marginRight="10dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:gravity="center"
+                android:text="@string/division" />
+
+            <EditText
+                android:id="@+id/division_edt_id"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.7"
+                android:background="@android:drawable/editbox_background_normal"
+                android:hint="@string/division"
+                android:padding="10dp"
+
+                android:inputType="textCapCharacters"
+
+                android:layout_marginEnd="10dp"
+                android:textColorHint="@color/light_grey"
+                android:layout_marginRight="10dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:gravity="center"
+                android:text="Name" />
+
+            <EditText
+                android:id="@+id/userName_edt_id"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:inputType="textCapCharacters"
+
+                android:layout_weight="0.7"
+                android:background="@android:drawable/editbox_background_normal"
+                android:hint="name"
+                android:padding="10dp"
+
+                android:layout_marginEnd="10dp"
+                android:textColorHint="@color/light_grey"
+                android:layout_marginRight="10dp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/save_info_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:background="@drawable/buttonshape"
+            android:gravity="center"
+            android:text="save"
+            android:textColor="@color/white" />
+
+
+    </LinearLayout>
+

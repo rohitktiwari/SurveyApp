@@ -1,0 +1,657 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/entervillname"
+                    android:textSize="@dimen/textViewTxtSize" />
+
+                <EditText
+                    android:id="@+id/etPlotVillage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_red_colour"
+                    android:hint="@string/entervillname"
+                    android:imeOptions="actionNext"
+                    android:inputType="numberDecimal"
+                    android:maxLength="10"
+                    android:maxLines="1"
+                    android:padding="10dp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnRecheckPlot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Recheck Plot"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="5dp"
+                android:gravity="end"
+                android:layout_gravity="end"
+                android:textSize="@dimen/textViewTxtSize" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/etLat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/editdisableshape"
+                    android:enabled="false"
+                    android:hint="@string/lat"
+                    android:imeOptions="actionNext"
+                    android:inputType="numberDecimal"
+                    android:maxLength="10"
+                    android:maxLines="1"
+                    android:padding="10dp"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/etLong"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/editdisableshape"
+                    android:enabled="false"
+                    android:hint="@string/longitude"
+                    android:imeOptions="actionNext"
+                    android:inputType="numberDecimal"
+                    android:maxLength="10"
+                    android:maxLines="1"
+                    android:padding="10dp"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/entervillAdd"
+                android:textSize="@dimen/textViewTxtSize" />
+
+            <EditText
+                android:id="@+id/etPlotAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/editdisableshape"
+                android:enabled="false"
+                android:hint="@string/entervillAdd"
+                android:imeOptions="actionNext"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:textColor="@color/black" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/entervillSerial"
+                android:textSize="@dimen/textViewTxtSize" />
+
+            <EditText
+                android:id="@+id/etVillageSerial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/editdisableshape"
+                android:focusable="false"
+                android:hint="@string/entervillSerial"
+                android:inputType="none"
+                android:imeOptions="actionNext"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:padding="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/percentage"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textViewTxtSize" />
+
+            <EditText
+                android:id="@+id/etPercent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/editdisableshape"
+                android:hint="@string/percentage"
+                android:enabled="false"
+                android:imeOptions="actionNext"
+                android:inputType="numberDecimal"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:padding="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/plotarea"
+                android:textSize="@dimen/textViewTxtSize" />
+
+            <EditText
+                android:id="@+id/etPlotArea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/editdisableshape"
+                android:enabled="false"
+                android:hint="@string/plotarea"
+                android:imeOptions="actionDone"
+                android:inputType="numberDecimal"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:textColor="@color/black" />
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/dimentsion"
+                android:textSize="@dimen/textViewTxtSize" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <EditText
+                        android:id="@+id/etEastDimen"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="2dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/editdisableshape"
+                        android:enabled="false"
+                        android:hint="Dim1"
+                        android:imeOptions="actionDone"
+                        android:maxLength="10"
+                        android:maxLines="1"
+                        android:padding="10dp"
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:id="@+id/etWestDimen"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="2dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/editdisableshape"
+                        android:enabled="false"
+                        android:hint="Dim2"
+                        android:imeOptions="actionDone"
+                        android:maxLength="10"
+                        android:maxLines="1"
+                        android:padding="10dp"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <EditText
+                        android:id="@+id/etNorthDimen"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="2dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/editdisableshape"
+                        android:enabled="false"
+                        android:hint="Dim3"
+                        android:imeOptions="actionDone"
+                        android:maxLength="10"
+                        android:maxLines="1"
+                        android:padding="10dp"
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:id="@+id/etSouthDimen"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="2dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/editdisableshape"
+                        android:enabled="false"
+                        android:hint="Dim4"
+                        android:imeOptions="actionDone"
+                        android:maxLength="10"
+                        android:maxLines="1"
+                        android:padding="10dp"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/vill"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textViewTxtSize" />
+
+            <EditText
+                android:id="@+id/etVillage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/editdisableshape"
+                android:hint="@string/vill"
+                android:enabled="false"
+                android:imeOptions="actionNext"
+                android:inputType="numberDecimal"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:padding="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/villAddress"
+                android:textSize="@dimen/textViewTxtSize" />
+
+            <EditText
+                android:id="@+id/etVillageAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/editdisableshape"
+                android:enabled="false"
+                android:hint="@string/villAddress"
+                android:imeOptions="actionDone"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/grower"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textViewTxtSize" />
+
+            <EditText
+                android:id="@+id/etGrower"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/editdisableshape"
+                android:hint="@string/grower"
+                android:enabled="false"
+                android:imeOptions="actionNext"
+                android:inputType="numberDecimal"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:padding="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/grower_name"
+                android:textSize="@dimen/textViewTxtSize" />
+
+            <EditText
+                android:id="@+id/etGrowerName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/editdisableshape"
+                android:enabled="false"
+                android:hint="@string/grower_name"
+                android:imeOptions="actionDone"
+                android:maxLength="10"
+                android:padding="10dp"
+                android:textColor="@color/black" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/accountVariety"
+                android:textSize="@dimen/textViewTxtSize" />
+
+            <EditText
+                android:id="@+id/etACVariety"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/editdisableshape"
+                android:hint="@string/accountVariety"
+                android:enabled="false"
+                android:imeOptions="actionNext"
+                android:inputType="numberDecimal"
+                android:maxLength="10"
+                android:padding="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/accountVarietyName"
+                android:textSize="@dimen/textViewTxtSize" />
+
+            <EditText
+                android:id="@+id/etACVarietyName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/editdisableshape"
+                android:enabled="false"
+                android:hint="@string/accountVarietyName"
+                android:imeOptions="actionDone"
+                android:maxLength="10"
+                android:padding="10dp"
+                android:textColor="@color/black" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/showingDate"
+                android:textSize="@dimen/textViewTxtSize" />
+
+            <EditText
+                android:id="@+id/etShowingDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/editdisableshape"
+                android:clickable="true"
+                android:focusable="false"
+                android:hint="@string/showingDate"
+                android:inputType="date"
+                android:padding="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Land Type"
+                android:textSize="@dimen/textViewTxtSize" />
+
+
+            <EditText
+                android:id="@+id/etLandTypeCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/editdisableshape"
+                android:hint="Land Type Code"
+                android:textColor="@color/black"
+                android:imeOptions="actionDone"
+                android:inputType="numberDecimal"
+                android:maxLength="10"
+                android:enabled="false"
+                android:maxLines="1"
+                android:layout_marginBottom="5dp"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/etLandType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/editdisableshape"
+                android:enabled="false"
+                android:hint="Land Type"
+                android:imeOptions="actionDone"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Crop Cycle"
+                android:textSize="@dimen/textViewTxtSize" />
+
+
+            <EditText
+                android:id="@+id/etCropCycleCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/editdisableshape"
+                android:hint="Crop Cycle Code"
+                android:enabled="false"
+                android:imeOptions="actionDone"
+                android:inputType="numberDecimal"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:textColor="@color/black"
+                android:layout_marginBottom="5dp"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/etCropCycle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/editdisableshape"
+                android:enabled="false"
+                android:hint="Crop Cycle"
+                android:imeOptions="actionDone"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Crop Type"
+                android:textSize="@dimen/textViewTxtSize" />
+
+
+            <EditText
+                android:id="@+id/etCropTypeCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/editdisableshape"
+                android:hint="Crop Type Code"
+                android:enabled="false"
+                android:textColor="@color/black"
+                android:imeOptions="actionDone"
+                android:inputType="numberDecimal"
+                android:maxLength="10"
+                android:layout_marginBottom="5dp"
+                android:maxLines="1"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/etCropType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/editdisableshape"
+                android:enabled="false"
+                android:hint="Crop Type"
+                android:imeOptions="actionDone"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/btnGps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GET Coordinate Corner 1"
+                android:gravity="end"
+                android:layout_gravity="end"
+                android:textSize="@dimen/textViewTxtSize" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/etLatRecheck"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/editdisableshape"
+                    android:enabled="false"
+                    android:hint="@string/lat"
+                    android:imeOptions="actionNext"
+                    android:inputType="numberDecimal"
+                    android:maxLength="10"
+                    android:maxLines="1"
+                    android:padding="10dp"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/etLongRecheck"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/editdisableshape"
+                    android:enabled="false"
+                    android:hint="@string/longitude"
+                    android:imeOptions="actionNext"
+                    android:inputType="numberDecimal"
+                    android:maxLength="10"
+                    android:maxLines="1"
+                    android:padding="10dp"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/dimentsion"
+                android:textSize="@dimen/textViewTxtSize" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <EditText
+                        android:id="@+id/etDim1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="2dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/editdisableshape"
+                        android:enabled="false"
+                        android:hint="Dim1"
+                        android:imeOptions="actionDone"
+                        android:maxLength="10"
+                        android:maxLines="1"
+                        android:padding="10dp"
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:id="@+id/etDim2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="2dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/editdisableshape"
+                        android:enabled="false"
+                        android:hint="Dim2"
+                        android:imeOptions="actionDone"
+                        android:maxLength="10"
+                        android:maxLines="1"
+                        android:padding="10dp"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <EditText
+                        android:id="@+id/etDim3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="2dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/editdisableshape"
+                        android:enabled="false"
+                        android:hint="Dim3"
+                        android:imeOptions="actionDone"
+                        android:maxLength="10"
+                        android:maxLines="1"
+                        android:padding="10dp"
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:id="@+id/etDim4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="2dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/editdisableshape"
+                        android:enabled="false"
+                        android:hint="Dim4"
+                        android:imeOptions="actionDone"
+                        android:maxLength="10"
+                        android:maxLines="1"
+                        android:padding="10dp"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+                <EditText
+                    android:id="@+id/etPlotAreaRecheck"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/editdisableshape"
+                    android:enabled="false"
+                    android:hint="Plot Area"
+                    android:imeOptions="actionDone"
+                    android:maxLength="10"
+                    android:maxLines="1"
+                    android:padding="10dp"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnprint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/buttonshape"
+                android:text="@string/print"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

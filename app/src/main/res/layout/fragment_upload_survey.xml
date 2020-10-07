@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Date From"
+            android:layout_marginBottom="3dp"
+            android:textSize="@dimen/textViewTxtSize" />
+
+        <EditText
+            android:id="@+id/etDateFrom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_red_colour"
+            android:hint="Date From"
+            android:inputType="date"
+            android:focusable="false"
+            android:imeOptions="actionNext"
+            android:maxLength="10"
+            android:maxLines="1"
+            android:padding="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Date Till"
+            android:layout_marginBottom="3dp"
+            android:textSize="@dimen/textViewTxtSize" />
+
+        <EditText
+            android:id="@+id/etDateTill"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_red_colour"
+            android:hint="Date Till"
+            android:inputType="date"
+            android:focusable="false"
+            android:imeOptions="actionNext"
+            android:maxLength="10"
+            android:maxLines="1"
+            android:padding="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Plot Village"
+            android:layout_marginBottom="3dp"
+            android:textSize="@dimen/textViewTxtSize" />
+
+        <EditText
+            android:id="@+id/etPlotVillage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_red_colour"
+            android:hint="Plot Village"
+            android:inputType="number"
+            android:imeOptions="actionNext"
+            android:maxLength="10"
+            android:maxLines="1"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/etPlotVillageName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/editdisableshape"
+            android:hint="Plot Village Name"
+            android:layout_marginTop="3dp"
+            android:enabled="false"
+            android:imeOptions="actionNext"
+            android:maxLength="10"
+            android:maxLines="1"
+            android:padding="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Plot Serial No"
+            android:layout_marginBottom="3dp"
+            android:textSize="@dimen/textViewTxtSize" />
+
+        <EditText
+            android:id="@+id/etPlotSerialNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_red_colour"
+            android:hint="Plot Serial No"
+            android:inputType="number"
+            android:imeOptions="actionNext"
+            android:maxLength="10"
+            android:maxLines="1"
+            android:padding="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pending Upload"
+            android:layout_marginBottom="3dp"
+            android:textSize="@dimen/textViewTxtSize" />
+
+        <EditText
+            android:id="@+id/etPendingUpload"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/editdisableshape"
+            android:hint="Pending Upload"
+            android:imeOptions="actionNext"
+            android:enabled="false"
+            android:maxLength="10"
+            android:maxLines="1"
+            android:padding="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+        <Button
+            android:id="@+id/btnUpload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/buttonshape"
+            android:text="Upload"
+            android:layout_marginEnd="1dp"
+            android:layout_weight="1"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btnCSVWrite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:layout_marginStart="1dp"
+            android:background="@drawable/buttonshape"
+            android:text="Data in CSV File"
+            android:textColor="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
